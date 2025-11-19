@@ -9,7 +9,7 @@ from typing import Callable, Iterable, List, Dict, Any
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = ROOT / "data" / "raw"
-OUTPUT_FILE = ROOT / "public" / "data" / "listings.json"
+OUTPUT_FILE = ROOT / "docs" / "data" / "listings.json"
 
 
 @dataclass
