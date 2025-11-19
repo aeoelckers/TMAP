@@ -1,0 +1,28 @@
+[
+  {
+    "listing_id": "12345",
+    "portal": "Portal Andes",
+    "title": "Terreno agrícola en Los Andes",
+    "type": "Agrícola",
+    "region": "Valparaíso",
+    "commune": "Los Andes",
+    "price_clp": 180000000,
+    "surface_m2": 5000,
+    "fiscal_value": 95000000,
+    "commercial_value": 200000000,
+    "url": "https://portal-andes.example/12345"
+  },
+  {
+    "listing_id": "78910",
+    "portal": "Portal Andes",
+    "title": "Terreno urbano en Peñaflor",
+    "type": "Urbano",
+    "region": "Metropolitana",
+    "commune": "Peñaflor",
+    "price_clp": 90000000,
+    "surface_m2": 1200,
+    "fiscal_value": 60000000,
+    "commercial_value": 110000000,
+    "url": "https://portal-andes.example/78910"
+  }
+]
