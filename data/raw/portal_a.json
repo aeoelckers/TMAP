@@ -1,7 +1,7 @@
 [
   {
-    "listing_id": "PIM-001",
-    "portal": "Portal Inmobiliario",
+    "listing_id": "12345",
+    "portal": "Portal Andes",
     "title": "Terreno agrícola en Los Andes",
     "type": "Agrícola",
     "region": "Valparaíso",
@@ -10,11 +10,11 @@
     "surface_m2": 5000,
     "fiscal_value": 95000000,
     "commercial_value": 200000000,
-    "url": "https://www.portalinmobiliario.com/venta/sitios-terrenos/los-andes"
+    "url": "https://portal-andes.example/12345"
   },
   {
-    "listing_id": "TOC-002",
-    "portal": "Toctoc",
+    "listing_id": "78910",
+    "portal": "Portal Andes",
     "title": "Terreno urbano en Peñaflor",
     "type": "Urbano",
     "region": "Metropolitana",
@@ -23,6 +23,6 @@
     "surface_m2": 1200,
     "fiscal_value": 60000000,
     "commercial_value": 110000000,
-    "url": "https://www.toctoc.com/propiedades/buscar?operacion=Venta&tipoPropiedad=Sitios&region=Regi%C3%B3n%20Metropolitana&comuna=Pe%C3%B1aflor"
+    "url": "https://portal-andes.example/78910"
   }
 ]
