@@ -31,6 +31,23 @@
     </header>
 
     <main class="content">
+      <section class="sources">
+        <div class="sources-header">
+          <div>
+            <p class="eyebrow">Fuentes reales</p>
+            <h2>Portales y agregadores conectados</h2>
+            <p class="subtitle">
+              Accede directo a los portales inmobiliarios y remates más usados en Chile. Usa la grilla para abrir la búsqueda de terrenos en la fuente original.
+            </p>
+          </div>
+          <div class="sources-meta">
+            <p class="meta-counter"><span id="sourcesCount">0</span> portales</p>
+            <p class="muted">Listado curado para llevar tráfico al origen real de las publicaciones.</p>
+          </div>
+        </div>
+        <div id="sourcesGrid" class="source-grid"></div>
+      </section>
+
       <section class="filters">
         <div class="filter-group">
           <label for="typeFilter">Tipo</label>
@@ -122,6 +139,17 @@
             <p class="hint opportunity"></p>
           </div>
         </div>
+      </article>
+    </template>
+
+    <template id="sourceCardTemplate">
+      <article class="source-card">
+        <div>
+          <p class="pill">Portal</p>
+          <h3 class="source-name"></h3>
+          <p class="source-meta"></p>
+        </div>
+        <a class="source-link" target="_blank" rel="noopener">Abrir búsqueda →</a>
       </article>
     </template>
 

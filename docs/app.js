@@ -7,6 +7,7 @@ const formatCompact = (value) =>
 const state = {
   listings: [],
   filtered: [],
+  sources: [],
 };
 
 const normalizeUrl = (rawUrl) => {
@@ -46,14 +47,21 @@ const elements = {
 };
 
 async function bootstrap() {
-  const response = await fetch('data/listings.json');
-  const payload = await response.json();
+  const [listingsResponse, sourcesResponse] = await Promise.all([
+    fetch('data/listings.json'),
+    fetch('data/portals.json'),
+  ]);
+
+  const payload = await listingsResponse.json();
   state.listings = payload.listings.map((listing, index) => ({
     ...listing,
     order: index,
   }));
 
+  state.sources = await sourcesResponse.json();
+
   hydrateFilters();
+  renderSources();
   applyFilters();
 }
 
@@ -228,6 +236,29 @@ function render() {
     }
 
     cardsContainer.appendChild(node);
+  });
+}
+
+function renderSources() {
+  const grid = document.getElementById('sourcesGrid');
+  const counter = document.getElementById('sourcesCount');
+  const template = document.getElementById('sourceCardTemplate');
+
+  counter.textContent = state.sources.length;
+  grid.innerHTML = '';
+
+  state.sources.forEach((source) => {
+    const node = template.content.cloneNode(true);
+    node.querySelector('.source-name').textContent = source.name;
+    node.querySelector('.source-meta').textContent = [source.category, source.tag]
+      .filter(Boolean)
+      .join(' · ');
+
+    const link = node.querySelector('.source-link');
+    link.href = source.url;
+    link.title = `Abrir ${source.name} en una pestaña nueva`;
+
+    grid.appendChild(node);
   });
 }
 
