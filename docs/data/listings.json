@@ -1,0 +1,83 @@
+{
+  "generated_from": "local samples",
+  "listings": [
+    {
+      "id": "PORTALA-12345",
+      "title": "Terreno agrícola en Los Andes",
+      "terrain_type": "Agrícola",
+      "region": "Valparaíso",
+      "commune": "Los Andes",
+      "price_clp": 180000000,
+      "surface_m2": 5000,
+      "origin": "portal",
+      "source_name": "Portal Andes",
+      "url": "https://portal-andes.example/12345",
+      "fiscal_value": 95000000,
+      "commercial_value": 200000000,
+      "extra": {}
+    },
+    {
+      "id": "PORTALA-78910",
+      "title": "Terreno urbano en Peñaflor",
+      "terrain_type": "Urbano",
+      "region": "Metropolitana",
+      "commune": "Peñaflor",
+      "price_clp": 90000000,
+      "surface_m2": 1200,
+      "origin": "portal",
+      "source_name": "Portal Andes",
+      "url": "https://portal-andes.example/78910",
+      "fiscal_value": 60000000,
+      "commercial_value": 110000000,
+      "extra": {}
+    },
+    {
+      "id": "PORTALB-LA-555",
+      "title": "Sitio industrial en Paine",
+      "terrain_type": "Industrial",
+      "region": "Metropolitana",
+      "commune": "Paine",
+      "price_clp": 240000000,
+      "surface_m2": 8000,
+      "origin": "portal",
+      "source_name": "Suelo Pro",
+      "url": "https://suelopro.example/LA-555",
+      "fiscal_value": 150000000,
+      "commercial_value": 260000000,
+      "extra": {}
+    },
+    {
+      "id": "PORTALB-LA-888",
+      "title": "Parcelación residencial en Villarrica",
+      "terrain_type": "Parcelación",
+      "region": "La Araucanía",
+      "commune": "Villarrica",
+      "price_clp": 130000000,
+      "surface_m2": 5000,
+      "origin": "portal",
+      "source_name": "Suelo Pro",
+      "url": "https://suelopro.example/LA-888",
+      "fiscal_value": 80000000,
+      "commercial_value": 150000000,
+      "extra": {}
+    },
+    {
+      "id": "REM-01",
+      "title": "Remate agrícola en Curicó",
+      "terrain_type": "Agrícola",
+      "region": "Maule",
+      "commune": "Curicó",
+      "price_clp": 70000000,
+      "surface_m2": 4500,
+      "origin": "remate",
+      "source_name": "Banco Estado",
+      "url": "https://remates.example/REM-01",
+      "fiscal_value": 90000000,
+      "commercial_value": 120000000,
+      "extra": {
+        "auction_date": "2024-11-18",
+        "entity": "Banco Estado"
+      }
+    }
+  ]
+}
