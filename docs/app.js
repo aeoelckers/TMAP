@@ -9,6 +9,25 @@ const state = {
   filtered: [],
 };
 
+const normalizeUrl = (rawUrl) => {
+  if (!rawUrl) return null;
+  if (/^https?:\/\//i.test(rawUrl)) return rawUrl;
+  return `https://${rawUrl}`;
+};
+
+const describeOriginLink = (url, sourceName) => {
+  if (!url) return 'Ver origen →';
+  try {
+    const hostname = new URL(url).hostname.replace(/^www\./, '');
+    if (sourceName && !hostname.toLowerCase().includes(sourceName.toLowerCase())) {
+      return `Ver en ${sourceName} →`;
+    }
+    return `Ver en ${hostname} →`;
+  } catch (error) {
+    return 'Ver origen →';
+  }
+};
+
 const elements = {
   typeFilter: document.getElementById('typeFilter'),
   regionFilter: document.getElementById('regionFilter'),
@@ -164,7 +183,25 @@ function render() {
     node.querySelector('.location').textContent = `${listing.terrain_type} · ${listing.commune}, ${listing.region}`;
 
     const link = node.querySelector('.external');
-    link.href = listing.url;
+    const normalizedUrl = normalizeUrl(listing.url);
+    const articleIsClickable = Boolean(normalizedUrl);
+
+    if (articleIsClickable) {
+      link.href = normalizedUrl;
+      link.textContent = describeOriginLink(normalizedUrl, listing.source_name);
+      link.title = `Abrir publicación original en ${listing.source_name}`;
+      link.rel = 'noopener noreferrer';
+      link.classList.remove('disabled');
+      article.dataset.clickable = 'true';
+      article.addEventListener('click', () => window.open(normalizedUrl, '_blank', 'noopener,noreferrer'));
+      link.addEventListener('click', (event) => event.stopPropagation());
+    } else {
+      link.removeAttribute('href');
+      link.textContent = 'Sin enlace disponible';
+      link.title = 'No hay enlace publicado para este terreno';
+      link.classList.add('disabled');
+      article.dataset.clickable = 'false';
+    }
 
     node.querySelector('.price').textContent = formatMoney(listing.price_clp);
     node.querySelector('.price-per-m2').textContent = `${formatMoney(listing.price_clp / listing.surface_m2)} /m²`;

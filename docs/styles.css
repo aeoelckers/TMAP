@@ -134,6 +134,10 @@ button.ghost {
   box-shadow: 0 15px 35px rgb(15 23 42 / 0.08);
 }
 
+.card[data-clickable='true'] {
+  cursor: pointer;
+}
+
 .card-header {
   display: flex;
   justify-content: space-between;
@@ -198,6 +202,11 @@ button.ghost {
   text-decoration: none;
   color: var(--accent-strong);
   font-weight: 600;
+}
+
+.external.disabled {
+  color: var(--muted);
+  cursor: not-allowed;
 }
 
 .card.opportunity {
