@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Portal Inmobiliario",
+    "url": "https://www.portalinmobiliario.com/venta/sitios-terrenos",
+    "search_template": "https://www.portalinmobiliario.com/venta/sitios-terrenos?query={query}",
+    "tag": "+1",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Toctoc",
+    "url": "https://www.toctoc.com/propiedades/buscar?operacion=Venta&tipoPropiedad=Sitios",
+    "search_template": "https://www.toctoc.com/propiedades/buscar?operacion=Venta&tipoPropiedad=Sitios&texto={query}",
+    "tag": "+1",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Yapo.cl (Inmuebles)",
+    "url": "https://www.yapo.cl/region_metropolitana/inmuebles",
+    "search_template": "https://www.yapo.cl/chile/inmuebles?q={query}",
+    "tag": "+1",
+    "category": "Clasificados"
+  },
+  {
+    "name": "GoPlaceIt",
+    "url": "https://www.goplaceit.com/cl/venta/terrenos",
+    "search_template": "https://www.goplaceit.com/cl/venta/terrenos?search={query}",
+    "tag": "+1",
+    "category": "Marketplace"
+  },
+  {
+    "name": "ChilePropiedades",
+    "url": "https://chilepropiedades.cl/propiedades/venta/terrenos",
+    "search_template": "https://chilepropiedades.cl/propiedades/venta/terrenos?search={query}",
+    "tag": "+1",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Enlace Inmobiliario (BancoEstado)",
+    "url": "https://bancoestado.enlaceinmobiliario.cl/busqueda?operacion=Venta&tipo=Terrenos",
+    "search_template": "https://bancoestado.enlaceinmobiliario.cl/busqueda?operacion=Venta&tipo=Terrenos&texto={query}",
+    "tag": "",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Doomos",
+    "url": "https://www.doomos.cl/propiedades/venta/terrenos",
+    "search_template": "https://www.doomos.cl/propiedades/venta/terrenos?q={query}",
+    "tag": "",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Emol Propiedades",
+    "url": "https://www.emolpropiedades.cl/propiedades/venta/sitios",
+    "search_template": "https://www.emolpropiedades.cl/propiedades/venta/sitios?texto={query}",
+    "tag": "",
+    "category": "Prensa"
+  },
+  {
+    "name": "Bienes Online",
+    "url": "https://www.bienesonline.cl/chile/buscar.php?cat=terrenos",
+    "search_template": "https://www.bienesonline.cl/chile/buscar.php?cat=terrenos&buscar={query}",
+    "tag": "",
+    "category": "Clasificados"
+  },
+  {
+    "name": "Trovit Chile",
+    "url": "https://casas.trovit.cl/index.php/cod.search_homes/type.ventaterrenos",
+    "search_template": "https://casas.trovit.cl/index.php/cod.search_homes/type.ventaterrenos/what_d.{query}",
+    "tag": "+1",
+    "category": "Agregador"
+  },
+  {
+    "name": "Mitula Chile",
+    "url": "https://casas.mitula.cl/compra/terreno",
+    "search_template": "https://casas.mitula.cl/compra/terreno?pcsv=1&q={query}",
+    "tag": "+1",
+    "category": "Agregador"
+  },
+  {
+    "name": "iCasas",
+    "url": "https://www.icasas.cl/venta/terrenos",
+    "search_template": "https://www.icasas.cl/venta/terrenos?q={query}",
+    "tag": "+1",
+    "category": "Agregador"
+  },
+  {
+    "name": "Imagina Chile",
+    "url": "https://www.imagina.cl/nuestros-proyectos",
+    "search_template": "https://www.imagina.cl/nuestros-proyectos?search={query}",
+    "tag": "",
+    "category": "Inmobiliaria"
+  },
+  {
+    "name": "La Encontré",
+    "url": "https://www.laencontre.com/casas/en-venta/terrenos",
+    "search_template": "https://www.laencontre.com/casas/en-venta/terrenos?q={query}",
+    "tag": "",
+    "category": "Agregador"
+  },
+  {
+    "name": "Globaliza",
+    "url": "https://cl.globaliza.com/terrenos-en-venta",
+    "search_template": "https://cl.globaliza.com/terrenos-en-venta?q={query}",
+    "tag": "",
+    "category": "Agregador"
+  }
+]
