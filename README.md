@@ -34,7 +34,7 @@ Metabuscador de terrenos en Chile.
 ## Funcionalidades destacadas
 
 - Integración de fuentes heterogéneas (portales tradicionales y remates) con trazabilidad del origen.
-- Filtros por tipo de terreno, región, comuna, origen, rango de precio, superficie y palabras clave.
+- Filtros por tipo de terreno, región, comuna, origen, rango de precio y superficie.
 - Indicadores calculados automáticamente: precio/m², avalúo/m², ratio precio/avalúo y descuento vs. avalúo comercial.
 - Ordenamiento por mejor oportunidad (menor ratio precio/avalúo) o por mayor descuento.
 - Diseño minimalista y responsive pensado para resaltar los datos y detectar oportunidades con rapidez.
