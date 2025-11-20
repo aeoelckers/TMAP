@@ -4,7 +4,7 @@ Metabuscador de terrenos en Chile.
 
 ## ¿Qué contiene este prototipo?
 
-- **Fuentes crudas** en `data/raw` con ejemplos de portales y remates.
+- **Fuentes crudas** en `data/raw` con ejemplos de portales y remates apuntando a búsquedas reales en los sitios chilenos.
 - **Script de integración** (`scripts/aggregate_listings.py`) que normaliza los datos y genera `docs/data/listings.json` listo para ser publicado.
 - **Interfaz web estática** en `docs/` compatible con GitHub Pages y que permite filtrar, ordenar y revisar indicadores clave de precio vs. avalúo.
 - **Directorio de portales reales** en `docs/data/portals.json` que la SPA muestra como una grilla de accesos directos para abrir búsquedas en los sitios oficiales.
