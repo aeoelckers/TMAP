@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>T-MAP · Metabuscador de terrenos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="content hero-layout">
+        <div>
+          <h1 class="brand">T-MAP</h1>
+          <p class="eyebrow">Metabuscador de terrenos en Chile</p>
+          <h2 class="tagline">Terrenos publicados y en remate en un solo lugar</h2>
+          <p class="subtitle">
+            Integra fuentes públicas y privadas para comparar precio, avalúo y oportunidades de inversión en Chile.
+          </p>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <span id="totalListings">0</span>
+            <p>Terrenos integrados</p>
+          </div>
+          <div>
+            <span id="remateShare">0%</span>
+            <p>Provienen de remates</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="filters">
+        <div class="filter-group">
+          <label for="typeFilter">Tipo</label>
+          <select id="typeFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="regionFilter">Región</label>
+          <select id="regionFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="communeFilter">Comuna</label>
+          <select id="communeFilter"></select>
+        </div>
+        <div class="filter-group">
+          <label for="originFilter">Origen</label>
+          <select id="originFilter">
+            <option value="all">Todos</option>
+            <option value="portal">Publicación</option>
+            <option value="remate">Remate</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Precio (MM$ CLP)</label>
+          <div class="dual-input">
+            <input type="number" id="minPrice" placeholder="mín" min="0" />
+            <input type="number" id="maxPrice" placeholder="máx" min="0" />
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Superficie (m²)</label>
+          <div class="dual-input">
+            <input type="number" id="minArea" placeholder="mín" min="0" />
+            <input type="number" id="maxArea" placeholder="máx" min="0" />
+          </div>
+        </div>
+        <div class="filter-group">
+          <label for="sortSelect">Ordenar por</label>
+          <select id="sortSelect">
+            <option value="default">Más recientes</option>
+            <option value="opportunity">Mejor oportunidad (precio/avalúo)</option>
+            <option value="discount">Mayor descuento vs avalúo</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <button id="clearFilters" class="ghost">Limpiar filtros</button>
+        </div>
+      </section>
+
+      <section class="results">
+        <div class="results-header">
+          <p id="resultsSummary">0 resultados</p>
+          <div class="legend">
+            <span class="pill">Precio vs avalúo comercial</span>
+          </div>
+        </div>
+        <div id="cardsContainer" class="cards"></div>
+      </section>
+    </main>
+
+    <template id="listingCardTemplate">
+      <article class="card">
+        <div class="card-header">
+          <div>
+            <p class="pill origin"></p>
+            <h2 class="title"></h2>
+            <p class="location"></p>
+          </div>
+          <a class="external" target="_blank" rel="noopener">Ver origen →</a>
+        </div>
+        <div class="card-body">
+          <div>
+            <p class="label">Precio</p>
+            <p class="value price"></p>
+            <p class="hint price-per-m2"></p>
+          </div>
+          <div>
+            <p class="label">Avalúo fiscal</p>
+            <p class="value fiscal"></p>
+            <p class="hint fiscal-per-m2"></p>
+          </div>
+          <div>
+            <p class="label">Avalúo comercial</p>
+            <p class="value commercial"></p>
+            <p class="hint commercial-per-m2"></p>
+          </div>
+          <div>
+            <p class="label">Indicadores</p>
+            <p class="value indicators"></p>
+            <p class="hint opportunity"></p>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
