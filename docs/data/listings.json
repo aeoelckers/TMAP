@@ -1,0 +1,83 @@
+{
+  "generated_from": "local samples",
+  "listings": [
+    {
+      "id": "PORTALA-PIM-001",
+      "title": "Terreno agrícola en Los Andes",
+      "terrain_type": "Agrícola",
+      "region": "Valparaíso",
+      "commune": "Los Andes",
+      "price_clp": 180000000,
+      "surface_m2": 5000,
+      "origin": "portal",
+      "source_name": "Portal Inmobiliario",
+      "url": "https://www.portalinmobiliario.com/venta/sitios-terrenos/los-andes",
+      "fiscal_value": 95000000,
+      "commercial_value": 200000000,
+      "extra": {}
+    },
+    {
+      "id": "PORTALA-TOC-002",
+      "title": "Terreno urbano en Peñaflor",
+      "terrain_type": "Urbano",
+      "region": "Metropolitana",
+      "commune": "Peñaflor",
+      "price_clp": 90000000,
+      "surface_m2": 1200,
+      "origin": "portal",
+      "source_name": "Toctoc",
+      "url": "https://www.toctoc.com/propiedades/buscar?operacion=Venta&tipoPropiedad=Sitios&region=Regi%C3%B3n%20Metropolitana&comuna=Pe%C3%B1aflor",
+      "fiscal_value": 60000000,
+      "commercial_value": 110000000,
+      "extra": {}
+    },
+    {
+      "id": "PORTALB-YAP-555",
+      "title": "Sitio industrial en Paine",
+      "terrain_type": "Industrial",
+      "region": "Metropolitana",
+      "commune": "Paine",
+      "price_clp": 240000000,
+      "surface_m2": 8000,
+      "origin": "portal",
+      "source_name": "Yapo.cl",
+      "url": "https://www.yapo.cl/region_metropolitana/inmuebles",
+      "fiscal_value": 150000000,
+      "commercial_value": 260000000,
+      "extra": {}
+    },
+    {
+      "id": "PORTALB-GOP-888",
+      "title": "Parcelación residencial en Villarrica",
+      "terrain_type": "Parcelación",
+      "region": "La Araucanía",
+      "commune": "Villarrica",
+      "price_clp": 130000000,
+      "surface_m2": 5000,
+      "origin": "portal",
+      "source_name": "GoPlaceIt",
+      "url": "https://www.goplaceit.com/cl/venta/terrenos/la-araucania/villarrica",
+      "fiscal_value": 80000000,
+      "commercial_value": 150000000,
+      "extra": {}
+    },
+    {
+      "id": "REM-01",
+      "title": "Remate agrícola en Curicó",
+      "terrain_type": "Agrícola",
+      "region": "Maule",
+      "commune": "Curicó",
+      "price_clp": 70000000,
+      "surface_m2": 4500,
+      "origin": "remate",
+      "source_name": "Banco Estado",
+      "url": "https://rematesjudiciales.minjusticia.gob.cl/expediente/REM-01",
+      "fiscal_value": 90000000,
+      "commercial_value": 120000000,
+      "extra": {
+        "auction_date": "2024-11-18",
+        "entity": "Banco Estado"
+      }
+    }
+  ]
+}

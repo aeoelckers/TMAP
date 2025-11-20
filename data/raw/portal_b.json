@@ -1,0 +1,36 @@
+[
+  {
+    "code": "YAP-555",
+    "source": "Yapo.cl",
+    "name": "Sitio industrial en Paine",
+    "category": "Industrial",
+    "location": {
+      "region": "Metropolitana",
+      "commune": "Paine"
+    },
+    "amount": 240000000,
+    "size": 8000,
+    "avaluos": {
+      "fiscal": 150000000,
+      "commercial": 260000000
+    },
+    "link": "https://www.yapo.cl/region_metropolitana/inmuebles"
+  },
+  {
+    "code": "GOP-888",
+    "source": "GoPlaceIt",
+    "name": "Parcelación residencial en Villarrica",
+    "category": "Parcelación",
+    "location": {
+      "region": "La Araucanía",
+      "commune": "Villarrica"
+    },
+    "amount": 130000000,
+    "size": 5000,
+    "avaluos": {
+      "fiscal": 80000000,
+      "commercial": 150000000
+    },
+    "link": "https://www.goplaceit.com/cl/venta/terrenos/la-araucania/villarrica"
+  }
+]
