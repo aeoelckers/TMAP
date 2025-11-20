@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Portal Inmobiliario",
+    "url": "https://www.portalinmobiliario.com/",
+    "tag": "+1",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Toctoc",
+    "url": "https://www.toctoc.com/",
+    "tag": "+1",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Yapo.cl (Inmuebles)",
+    "url": "https://www.yapo.cl/",
+    "tag": "+1",
+    "category": "Clasificados"
+  },
+  {
+    "name": "GoPlaceIt",
+    "url": "https://www.goplaceit.com/cl/",
+    "tag": "+1",
+    "category": "Marketplace"
+  },
+  {
+    "name": "ChilePropiedades",
+    "url": "https://chilepropiedades.cl/",
+    "tag": "+1",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Enlace Inmobiliario (BancoEstado)",
+    "url": "https://bancoestado.enlaceinmobiliario.cl/",
+    "tag": "",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Doomos",
+    "url": "https://www.doomos.cl/",
+    "tag": "",
+    "category": "Marketplace"
+  },
+  {
+    "name": "Emol Propiedades",
+    "url": "https://www.emolpropiedades.cl/",
+    "tag": "",
+    "category": "Prensa"
+  },
+  {
+    "name": "Bienes Online",
+    "url": "https://www.bienesonline.cl/",
+    "tag": "",
+    "category": "Clasificados"
+  },
+  {
+    "name": "Trovit Chile",
+    "url": "https://www.trovit.cl/",
+    "tag": "+1",
+    "category": "Agregador"
+  },
+  {
+    "name": "Mitula Chile",
+    "url": "https://www.mitula.cl/",
+    "tag": "+1",
+    "category": "Agregador"
+  },
+  {
+    "name": "iCasas",
+    "url": "https://www.icasas.cl/",
+    "tag": "+1",
+    "category": "Agregador"
+  },
+  {
+    "name": "Imagina Chile",
+    "url": "https://www.imagina.cl/",
+    "tag": "",
+    "category": "Inmobiliaria"
+  },
+  {
+    "name": "La Encontré",
+    "url": "https://www.laencontre.com/",
+    "tag": "",
+    "category": "Agregador"
+  },
+  {
+    "name": "Globaliza",
+    "url": "https://cl.globaliza.com/",
+    "tag": "",
+    "category": "Agregador"
+  }
+]

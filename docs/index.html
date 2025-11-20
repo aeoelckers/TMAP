@@ -8,26 +8,46 @@
   </head>
   <body>
     <header class="hero">
-      <div>
-        <p class="eyebrow">T-MAP</p>
-        <h1>Terrenos publicados y en remate en un solo lugar</h1>
-        <p class="subtitle">
-          Integra fuentes públicas y privadas para comparar precio, avalúo y oportunidades de inversión en Chile.
-        </p>
-      </div>
-      <div class="hero-metrics">
+      <div class="content hero-layout">
         <div>
-          <span id="totalListings">0</span>
-          <p>Terrenos integrados</p>
+          <h1 class="brand">T-MAP</h1>
+          <p class="eyebrow">Metabuscador de terrenos en Chile</p>
+          <h2 class="tagline">Terrenos publicados y en remate en un solo lugar</h2>
+          <p class="subtitle">
+            Integra fuentes públicas y privadas para comparar precio, avalúo y oportunidades de inversión en Chile.
+          </p>
         </div>
-        <div>
-          <span id="remateShare">0%</span>
-          <p>Provienen de remates</p>
+        <div class="hero-metrics">
+          <div>
+            <span id="totalListings">0</span>
+            <p>Terrenos integrados</p>
+          </div>
+          <div>
+            <span id="remateShare">0%</span>
+            <p>Provienen de remates</p>
+          </div>
         </div>
       </div>
     </header>
 
-    <main>
+    <main class="content">
+      <section class="sources">
+        <div class="sources-header">
+          <div>
+            <p class="eyebrow">Fuentes reales</p>
+            <h2>Portales y agregadores conectados</h2>
+            <p class="subtitle">
+              Accede directo a los portales inmobiliarios y remates más usados en Chile. Usa la grilla para abrir la búsqueda de terrenos en la fuente original.
+            </p>
+          </div>
+          <div class="sources-meta">
+            <p class="meta-counter"><span id="sourcesCount">0</span> portales</p>
+            <p class="muted">Listado curado para llevar tráfico al origen real de las publicaciones.</p>
+          </div>
+        </div>
+        <div id="sourcesGrid" class="source-grid"></div>
+      </section>
+
       <section class="filters">
         <div class="filter-group">
           <label for="typeFilter">Tipo</label>
@@ -119,6 +139,17 @@
             <p class="hint opportunity"></p>
           </div>
         </div>
+      </article>
+    </template>
+
+    <template id="sourceCardTemplate">
+      <article class="source-card">
+        <div>
+          <p class="pill">Portal</p>
+          <h3 class="source-name"></h3>
+          <p class="source-meta"></p>
+        </div>
+        <a class="source-link" target="_blank" rel="noopener">Abrir búsqueda →</a>
       </article>
     </template>
 
