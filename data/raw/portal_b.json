@@ -1,8 +1,8 @@
 [
   {
-    "code": "YAP-555",
-    "source": "Yapo.cl",
-    "name": "Búsqueda de sitios industriales en Paine",
+    "code": "LA-555",
+    "source": "Suelo Pro",
+    "name": "Sitio industrial en Paine",
     "category": "Industrial",
     "location": {
       "region": "Metropolitana",
@@ -14,11 +14,11 @@
       "fiscal": 150000000,
       "commercial": 260000000
     },
-    "link": "https://www.yapo.cl/region_metropolitana/inmuebles?ca=11_s&q=terreno%20industrial%20paine"
+    "link": "https://suelopro.example/LA-555"
   },
   {
-    "code": "GOP-888",
-    "source": "GoPlaceIt",
+    "code": "LA-888",
+    "source": "Suelo Pro",
     "name": "Parcelación residencial en Villarrica",
     "category": "Parcelación",
     "location": {
@@ -31,6 +31,6 @@
       "fiscal": 80000000,
       "commercial": 150000000
     },
-    "link": "https://www.goplaceit.com/cl/venta/terrenos/la-araucania/villarrica"
+    "link": "https://suelopro.example/LA-888"
   }
 ]

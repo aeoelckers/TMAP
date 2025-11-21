@@ -8,7 +8,6 @@ Metabuscador de terrenos en Chile.
 - **Script de integración** (`scripts/aggregate_listings.py`) que normaliza los datos y genera `docs/data/listings.json` listo para ser publicado.
 - **Interfaz web estática** en `docs/` compatible con GitHub Pages y que permite filtrar, ordenar y revisar indicadores clave de precio vs. avalúo.
 - **Directorio de portales reales** en `docs/data/portals.json` que la SPA muestra como una grilla de accesos directos para abrir búsquedas en los sitios oficiales.
-- **Panel de búsquedas en vivo** que toma tus filtros/palabras clave y genera enlaces directos a los resultados en cada portal, debajo de la grilla local.
 
 ## Cómo generar y visualizar la data
 
@@ -35,10 +34,8 @@ Metabuscador de terrenos en Chile.
 ## Funcionalidades destacadas
 
 - Integración de fuentes heterogéneas (portales tradicionales y remates) con trazabilidad del origen.
-- Filtros por tipo de terreno, región, comuna, origen, rango de precio, superficie y palabras clave.
-- Búsquedas automáticas en portales inmobiliarios chilenos con la misma query que usas en los filtros; los resultados se abren en cada sitio en tiempo real.
+- Filtros por tipo de terreno, región, comuna, origen, rango de precio y superficie.
 - Indicadores calculados automáticamente: precio/m², avalúo/m², ratio precio/avalúo y descuento vs. avalúo comercial.
 - Ordenamiento por mejor oportunidad (menor ratio precio/avalúo) o por mayor descuento.
 - Diseño minimalista y responsive pensado para resaltar los datos y detectar oportunidades con rapidez.
 - Panel de **fuentes reales** con enlaces directos a portales inmobiliarios y agregadores chilenos para abrir la búsqueda original sin salir de T-MAP.
-- Dataset de ejemplo local para demostrar la grilla: los enlaces apuntan a páginas de búsqueda vigentes, pero la disponibilidad de publicaciones depende de cada portal.

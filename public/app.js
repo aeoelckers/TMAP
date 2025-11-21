@@ -7,26 +7,6 @@ const formatCompact = (value) =>
 const state = {
   listings: [],
   filtered: [],
-  sources: [],
-};
-
-const normalizeUrl = (rawUrl) => {
-  if (!rawUrl) return null;
-  if (/^https?:\/\//i.test(rawUrl)) return rawUrl;
-  return `https://${rawUrl}`;
-};
-
-const describeOriginLink = (url, sourceName) => {
-  if (!url) return 'Ver origen →';
-  try {
-    const hostname = new URL(url).hostname.replace(/^www\./, '');
-    if (sourceName && !hostname.toLowerCase().includes(sourceName.toLowerCase())) {
-      return `Ver en ${sourceName} →`;
-    }
-    return `Ver en ${hostname} →`;
-  } catch (error) {
-    return 'Ver origen →';
-  }
 };
 
 const elements = {
@@ -47,21 +27,14 @@ const elements = {
 };
 
 async function bootstrap() {
-  const [listingsResponse, sourcesResponse] = await Promise.all([
-    fetch('data/listings.json'),
-    fetch('data/portals.json'),
-  ]);
-
-  const payload = await listingsResponse.json();
+  const response = await fetch('data/listings.json');
+  const payload = await response.json();
   state.listings = payload.listings.map((listing, index) => ({
     ...listing,
     order: index,
   }));
 
-  state.sources = await sourcesResponse.json();
-
   hydrateFilters();
-  renderSources();
   applyFilters();
 }
 
@@ -191,25 +164,7 @@ function render() {
     node.querySelector('.location').textContent = `${listing.terrain_type} · ${listing.commune}, ${listing.region}`;
 
     const link = node.querySelector('.external');
-    const normalizedUrl = normalizeUrl(listing.url);
-    const articleIsClickable = Boolean(normalizedUrl);
-
-    if (articleIsClickable) {
-      link.href = normalizedUrl;
-      link.textContent = describeOriginLink(normalizedUrl, listing.source_name);
-      link.title = `Abrir publicación original en ${listing.source_name}`;
-      link.rel = 'noopener noreferrer';
-      link.classList.remove('disabled');
-      article.dataset.clickable = 'true';
-      article.addEventListener('click', () => window.open(normalizedUrl, '_blank', 'noopener,noreferrer'));
-      link.addEventListener('click', (event) => event.stopPropagation());
-    } else {
-      link.removeAttribute('href');
-      link.textContent = 'Sin enlace disponible';
-      link.title = 'No hay enlace publicado para este terreno';
-      link.classList.add('disabled');
-      article.dataset.clickable = 'false';
-    }
+    link.href = listing.url;
 
     node.querySelector('.price').textContent = formatMoney(listing.price_clp);
     node.querySelector('.price-per-m2').textContent = `${formatMoney(listing.price_clp / listing.surface_m2)} /m²`;
@@ -236,29 +191,6 @@ function render() {
     }
 
     cardsContainer.appendChild(node);
-  });
-}
-
-function renderSources() {
-  const grid = document.getElementById('sourcesGrid');
-  const counter = document.getElementById('sourcesCount');
-  const template = document.getElementById('sourceCardTemplate');
-
-  counter.textContent = state.sources.length;
-  grid.innerHTML = '';
-
-  state.sources.forEach((source) => {
-    const node = template.content.cloneNode(true);
-    node.querySelector('.source-name').textContent = source.name;
-    node.querySelector('.source-meta').textContent = [source.category, source.tag]
-      .filter(Boolean)
-      .join(' · ');
-
-    const link = node.querySelector('.source-link');
-    link.href = source.url;
-    link.title = `Abrir ${source.name} en una pestaña nueva`;
-
-    grid.appendChild(node);
   });
 }
 
