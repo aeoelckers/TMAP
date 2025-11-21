@@ -1,0 +1,16 @@
+[
+  {
+    "id": "REM-01",
+    "entity": "Banco Estado",
+    "asset_name": "Remate agrícola en Curicó",
+    "terrain_type": "Agrícola",
+    "region": "Maule",
+    "commune": "Curicó",
+    "minimum_bid": 70000000,
+    "surface": 4500,
+    "avaluo_fiscal": 90000000,
+    "avaluo_comercial": 120000000,
+    "auction_date": "2024-11-18",
+    "docs": "https://rematesjudiciales.minjusticia.gob.cl/expediente/REM-01"
+  }
+]
